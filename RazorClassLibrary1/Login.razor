@@ -1,0 +1,31 @@
+﻿@page "/"
+@page "/login";
+
+@inject NavigationManager Navigate
+@inject Blazored.LocalStorage.ILocalStorageService localstorage
+@inject IJSRuntime jsRuntime
+
+<div>
+    <h3>Login</h3>
+    <div class="container">
+        <input class="form-control" placeholder="Enter User name" />
+        <input class="form-control" placeholder="Enter Password" />
+        <button class="btn btn-success" @onclick=LoginAsync>Login</button>
+    </div>
+</div>
+
+@code{
+
+    private async Task LoginAsync()
+    {
+        localstorage.SetItemAsync("token", "ze345rdere23");
+        var _token = localstorage.GetItemAsync<string>("token");
+
+        if(_token != null)
+        {  
+            Navigate.NavigateTo("counter");
+        }
+        StateHasChanged();
+    }
+
+}

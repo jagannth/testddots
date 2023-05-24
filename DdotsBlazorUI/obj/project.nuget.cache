@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "X3dhQDKybfv9SYmKhwtS7NxhuXHk8AOgbMFMKItOdaH3LmgoADDC6+oX5UwK2/8At2UdWQG29SrtwDptg9Susw==",
+  "success": true,
+  "projectFilePath": "E:\\Jagannath_Team_Lead\\Projects\\Web\\github\\testddots\\DdotsBlazorUI\\DdotsBlazorUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\magup\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512"
+  ],
+  "logs": []
+}
